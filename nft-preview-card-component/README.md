@@ -15,7 +15,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -115,13 +114,5 @@ I want to continue to llearn how to play with CSS an get cool design effects.
 
 - Frontend Mentor - [MartheA_19](https://www.frontendmentor.io/profile/MartheAudrey)
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-=======
-# Frontend-Mentor
-Discover the solutions I proposed to Frontend Mentor challenges.
->>>>>>> 59cd0321e40f64d8255db8733804316e3855e913
 
