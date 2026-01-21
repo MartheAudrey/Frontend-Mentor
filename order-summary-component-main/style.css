@@ -1,0 +1,139 @@
+:root{
+    /*Primary*/
+    --page-background: hsl(225, 100%, 94%);
+    --blue-700: hsl(245, 75%, 52%);
+
+    /*Neutral*/
+
+    --card-background: hsl(225, 100%, 98%);
+    --gray-600: hsl(224, 23%, 55%);
+    --blue-950: hsl(223, 47%, 23%);
+
+    --rad: 10px;
+    --space: 1rem;
+
+    /*Font weights*/
+    --fw-medium: 500;
+    --fw-semi-bold: 700;
+    --fw-bold: 900;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg{
+    width: 100%;
+}
+
+html,
+body{
+    height: 100%;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body{
+    background-color: var(--page-background);
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray-600);
+    font-weight: var(--fw-medium);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main{
+    padding: 2rem;
+}
+
+article{
+    max-width: 350px;
+    background-color: var(--card-background);
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 15px 15px hsla(245, 75%, 52%, 0.244);
+}
+
+h3,
+h2{
+    color: var(--blue-950);
+}
+
+.content__container{
+    padding: 2rem;
+    display: grid;
+    gap: var(--space);
+}
+
+h2{
+    font-weight: var(--fw-bold);
+}
+
+h3, 
+a,
+button{
+    font-weight: var(--fw-semi-bold);
+}
+
+.plan__container{
+    background-color: hsla(224, 23%, 55%, 0.034);
+    border-radius: var(--rad);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space);
+}
+
+.plan__details{
+    display: flex;
+    gap: 10px;
+}
+
+.plan__details img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.plan__container a:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.749);
+}
+
+button{
+    border: none;
+    background-color: var(--blue-700);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+button:hover{
+    background-color: hsla(245, 75%, 52%, 0.749);
+    cursor: pointer;
+    box-shadow: 0px 10px 10px hsla(245, 75%, 52%, 0.349);
+}
+
+button a{
+    color: var(--page-background);
+    font-family: "Red Hat Display";
+    cursor: pointer;
+}
+
+button a,
+.content__container > a:last-of-type{
+    text-decoration: none;
+}
+
+@media (max-width: 400px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+}
