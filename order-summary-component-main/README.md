@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [(https://github.com/MartheAudrey/Frontend-Mentor.git)]
 - Live Site URL: [https://frontend-mentor-order-summary-ruddy.vercel.app/]
 
 ## My process
