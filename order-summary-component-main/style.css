@@ -53,6 +53,20 @@ main{
     padding: 2rem;
 }
 
+.sr-only{
+    position: absolute;
+    /*Takes the element out of the normal document flow. Without this, shrinking the element to 1px by 1px (next lines) could still affect layout. It allows the element to overlap or loat without pushing other elements around.*/
+    width: 1px;
+    height: 1px;
+    /* Shrinks the element to tiny dimensions (almost invisible). 1px x 1px is enough to stay in the DOM so screen readers can access it, but too smal to notice visually.*/
+    clip-path: inset(50%);
+    /*Defines a rectangular clipping area (top, right, bottom, left). The element is still in the DOM, so screen readers can still read it.*/
+    overflow: hidden;
+    /*Hides any content that exceeds the element's width and height. In combination with width:1px; height:1px; it ensures nothing spills onto the pqge visually.*/
+    white-space: nowrap;
+    /*Prevents text from wrapping onto multiples lines. Ensures the text stays in one linem so it won't leak outside the tiny clipped box.*/
+}
+
 article{
     max-width: 350px;
     background-color: var(--card-background);
@@ -136,4 +150,5 @@ button a,
     body{
         background-image: url(images/pattern-background-mobile.svg);
     }
+
 }
