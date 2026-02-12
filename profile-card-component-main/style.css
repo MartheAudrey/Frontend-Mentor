@@ -1,0 +1,82 @@
+:root{
+    --blue-600: hsl(185, 75%, 39%);
+    --navy-950: hsl(229, 23%, 23%);
+    --gray-500: hsl(227, 10%, 46%);
+    --regular-fw: 300;
+    --bold-fw: 700;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img,svg{
+    width: 100%;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--blue-600);
+    font-family: "Kumbh Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: var(--regular-fw);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 35vh, left 50vw top 40vh;
+}
+
+main{
+    padding: 2rem;
+}
+
+article{
+    max-width: 300px;
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+article img:last-of-type {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 80px;
+    margin-top: -50px;
+}
+
+h2, h3 {
+    color: var(--navy-950);
+    font-weight: var(--bold-fw);
+    margin-bottom: 0.625rem;
+}
+
+.user_details, .user_records{
+    margin-top: 1rem;
+}
+
+.user_records{
+    display: flex;
+    border-top: 1px solid hsla(227, 10%, 46%, 0.534);
+    align-items: center;
+    padding-block: 1rem;
+    justify-content: space-evenly;
+}
+
+.user_details span{
+    font-weight: var(--regular-fw);
+}
+
+.user_details span,
+.user_details p,
+.user_records p{
+    color: var(--gray-500);
+}
