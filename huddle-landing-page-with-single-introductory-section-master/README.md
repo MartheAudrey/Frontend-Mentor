@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Reppository](https://github.com/MartheAudrey/Frontend-Mentor/tree/main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Huddle landing page](https://frontend-mentor-4dgt.vercel.app/)
 
 ## My process
 
