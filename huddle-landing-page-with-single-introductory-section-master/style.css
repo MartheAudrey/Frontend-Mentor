@@ -1,0 +1,142 @@
+:root{
+    --Purple-700: hsl(257, 40%, 49%);
+    --Magenta-400: hsl(300, 69%, 71%);
+    --fw-regular: 400;
+    --fw-bold: 600;
+
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg{
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button {
+    font: inherit;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--Purple-700);
+    color: white;
+    padding: 3rem;
+    font-weight: var(--fw-regular);
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top;
+}
+
+main{
+    display: grid;
+    gap: 4rem;
+    place-content: center;
+    width: 100%;
+}
+
+.logo{
+    width: 150px;
+}
+
+.wrapper{
+    display: grid;
+    gap: 4rem;
+}
+
+.content__container{
+    display: grid;
+    gap: 1.5rem;
+    place-items: center;
+    text-align: center;
+}
+
+.content__container h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.563rem, 1.2331rem + 1.4077vw, 2.5rem);
+    font-weight: var(--fw-bold);
+}
+
+.content__container button{
+    padding: 0.5rem 5rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px hsla(257, 40%, 27%, 0.623);
+    color: var(--Purple-700);
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.content__container button:hover{
+    cursor: pointer;
+    background-color: var(--Magenta-400);
+    color: white;
+}
+
+.social__icons__container{
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid white;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.icon:hover{
+    color: var(--Magenta-400);
+    border: 1.5px solid var(--Magenta-400);
+}
+
+@media (min-width: 600px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+        background-size: cover;
+        padding: 2rem;
+    }
+    .wrapper{
+        display: flex;
+        max-width: 1100px;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+    }
+    .hero-image {
+        min-width: 0;
+    }
+
+    .content__container{
+        justify-items: start;;
+        align-items: flex-start;
+        text-align: left;
+        width: 50%;
+    }
+
+    .content__container button{
+        padding-inline: 3rem;
+    }
+
+    .social__icons__container{
+        justify-content: flex-end;
+    }
+}
