@@ -38,6 +38,15 @@ main{
     padding: 2rem;
 }
 
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
 article{
     max-width: 300px;
     background-color: white;
@@ -79,4 +88,5 @@ h2, h3 {
 .user_details p,
 .user_records p{
     color: var(--gray-500);
+
 }
