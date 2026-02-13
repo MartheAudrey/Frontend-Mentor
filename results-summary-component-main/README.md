@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Repository](https://github.com/MartheAudrey/Frontend-Mentor.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Results summary component](https://frontend-mentor-5rhz.vercel.app/)
 
 ## My process
 
