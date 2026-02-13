@@ -1,0 +1,213 @@
+:root{
+    /*Neutral colors*/
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+
+    /*Gradient colors*/
+    --background-color1: hsl(252, 100%, 67%);
+    --background-color2: hsl(241, 81%, 54%);
+
+    --circle-color1: hsla(256, 72%, 46%, 1);
+    --circle-color2: hsla(241, 72%, 46%, 0);
+
+    /*Primary colors*/
+    --light-red: hsl(0, 100%, 67%);
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --green-teal: hsl(166, 100%, 37%);
+    --cobalt-blue: hsl(234, 85%, 45%);
+
+    /*Font weights*/
+    --fw-regular : 500;
+    --fw-medium : 700;
+    --fw-bold : 800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+svg{
+    width: 100%;
+}
+
+html,
+body{
+    height: 100%;
+    font-size: 1.1rem;
+}
+
+body{
+    font-family: 'Hanken Grotesk',sans-serif;
+    font-weight: var(--fw-regular);
+    font-size: 1.125rem;
+}
+main{
+    min-height: 100%;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.score__container{
+    background-image: linear-gradient(to bottom, var(--background-color1), var(--background-color2));
+    color: white;
+    padding: 1rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    border-radius: 0 0 35px 35px;
+}
+
+.score__container p{
+    color: var(--light-lavender);
+    
+}
+
+.score__container > p:last-of-type{
+    width: 90%;
+}
+
+.note__container{
+    background-image: linear-gradient(to bottom, var(--circle-color1), var(--circle-color2));
+    width: 12rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    margin-block: 1rem;
+}
+
+.note__container h2{
+    font-weight: var(--fw-bold);
+    font-size: 3rem;
+}
+
+.aptitudes__container{
+    display: grid;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.grid-flow{
+    display: grid;
+    gap: 1rem;
+}
+
+.aptitudes__container h3,
+.aptitude span{
+    color: var(--dark-gray-blue);
+}
+
+.aptitudes__container button{
+    background-color: var(--dark-gray-blue);
+    color: white;
+    text-align: center;
+    padding-block: 1rem;
+    border-radius: 50px;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.aptitudes__container button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, var(--background-color1), var(--background-color2));
+}
+
+.aptitude span{
+    font-weight: var(--fw-medium);
+}
+
+.aptitude{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(216, 2%, 56%);
+    padding: 0.6rem 0.5rem;
+    border-radius: 10px;
+}
+
+.aptitude img{
+    height: 30px;
+    width: 30px;
+}
+
+.description{
+    display: flex;
+    align-items: center;
+}
+.description h4{
+    margin-left: 10px;
+}
+
+.reaction__section{
+    background-color: hsla(0, 100%, 67%, 0.15);
+}
+.reaction__section h4{
+    color: var(--light-red);
+}
+
+.memory__section{
+    background-color: hsla(39, 100%, 56%, 0.15);
+}
+.memory__section h4{
+    color: var(--orangey-yellow);
+}
+
+.verbal__section{
+    background-color: hsla(166, 100%, 37%, 0.15);
+}
+.verbal__section h4{
+    color: var(--green-teal);
+}
+
+.visual__section{
+    background-color: hsla(234, 85%, 45%, 0.15);
+}
+.visual__section h4{
+    color: var(--cobalt-blue);
+}
+
+@media (min-width: 650px){
+    body{
+        min-height: 100%;
+        display: grid;
+        place-content: center;
+        background-color: var(--pale-blue);
+    }
+    article{
+        display: flex;
+        max-width: 700px;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: white;
+        box-shadow: 0 20px 40px hsla(241, 72%, 46%, 0.15);
+    }
+    .score__container{
+        padding: 1rem 1rem 2rem;
+        border-radius: 0 20px 20px 0;
+        flex: 1;
+    }
+    .score__container > p:last-of-type{
+        width: 80%;
+    }
+    .aptitudes__container{
+        flex: 1;
+        padding: 2rem;
+    }
+
+}
+
+
