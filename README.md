@@ -5,3 +5,4 @@
 * Profile card component (https://frontend-mentor-561u.vercel.app/)
 * Huddle landing page (https://frontend-mentor-4dgt.vercel.app/)
 * Results summary component(https://frontend-mentor-5rhz.vercel.app/)
+* Social proof section master(https://frontend-mentor-5bil.vercel.app/)
