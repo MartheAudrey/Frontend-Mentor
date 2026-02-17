@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Repository](https://github.com/MartheAudrey/Frontend-Mentor.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Social Proof Section Master](https://frontend-mentor-5bil.vercel.app/)
 
 ## My process
 
