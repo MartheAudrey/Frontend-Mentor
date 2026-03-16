@@ -1,0 +1,221 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Neutral colors*/
+    --blue200: hsl(243, 100%, 93%);
+    --grayishBlue: hsl(229, 7%, 55%);
+    --blue850: hsl(228, 56%, 26%);
+    --blue950: hsl(229, 57%, 11%);
+
+    --gradient: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+
+    /*Font weights*/
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+html,
+body{
+    min-height: 100%;
+}
+
+img,
+svg{
+    display: block;
+    width: 100%;
+}
+
+body{
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-weight: var(--fw-regular);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+article{
+    display: grid;
+    gap: 1rem;
+}
+
+.storage-status, .storage-controls{
+    background-color: var(--blue850);
+    width: 100%;
+    max-width: 350px;
+    margin-inline: auto;
+    box-shadow: -10px 15px 20px hsla(229, 57%, 11%, 0.269);
+}
+
+.storage-controls{
+    padding: 2rem;
+    border-radius: 10px 5rem 10px 10px;
+}
+
+.storage-controls > img{
+    width: 130px;
+}
+
+.icons-group{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 10px;
+}
+
+.icons-group button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--blue950);
+    border: none;
+    cursor: pointer;
+    /*By default, button is innline-block element.By giving it a display grid or flex, you turn it into a block-level element. You need to define in their containerhow the should display. */
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.icons-group button img{
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+.storage-status{
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    position: relative;
+}
+
+.storage-status span,
+.storage-limits span,
+.storage-left span{
+    font-weight: var(--fw-bold);
+}
+
+.progress-bar-container{
+    background-color: var(--blue950);
+    padding: .2rem;
+    border-radius: 50px;
+    height: 25px;
+}
+
+.progress-bar{
+    background: var(--gradient);
+    height: 100%; /*To give height: 100% the parent container must have an explicit height*/
+    width: 75%;
+    border-radius: 150px;
+    position: relative;
+    padding: 5px;
+}
+
+.progress-bar::after{
+    content: " ";
+    background-color: white;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    right: 1%;
+    top: 49%;
+    transform: translateY(-50%);
+}
+
+.storage-limits{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.storage-left{
+    background-color: white;
+    padding-block: 0.5rem;
+    color: var(--grayishBlue);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--blue950);
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+}
+
+.storage-left p{
+    text-transform: uppercase;
+    font-weight: var(--fw-bold);
+    font-size: 12px;
+}
+
+.storage-left span{
+    color: var(--blue950);
+    font-size: 2rem;
+    padding: .3rem;
+}
+
+
+@media (min-width: 680px){
+    body{
+        background-color: var(--blue950);
+        background-image: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 100% auto;
+        
+    }
+    article{
+        display: flex;
+        width: 100%;
+        max-width: 900px;
+        margin-inline: auto;
+        gap: 1.5rem;
+        border: 1px solid greenyellow;
+    }
+    .storage-status, .storage-controls{
+        max-width: none;
+        margin-inline: 0;
+    }
+    .storage-controls{
+        flex: 1;
+    }
+    .storage-status{
+        flex: 2;
+        text-align: left;
+    }
+    .storage-left{
+        top: -40px;
+        /*For the right property to hqve effect, reset left and transform properties.*/
+        left: auto;
+        transform: none;
+        right: 30px;
+        border-radius: 10px;
+    }
+    .storage-left::after{
+        content: "";
+        position: absolute;
+        bottom: -18px;
+        right: 0px;
+        border-top: 23px solid transparent;
+        border-right: 23px solid white;
+        border-bottom: 23px solid transparent;
+    }
+}
