@@ -6,3 +6,4 @@
 * Huddle landing page (https://frontend-mentor-4dgt.vercel.app/)
 * Results summary component(https://frontend-mentor-5rhz.vercel.app/)
 * Social proof section master(https://frontend-mentor-5bil.vercel.app/)
+* Fylo data storage component (https://frontend-mentor-i87v.vercel.app/)
