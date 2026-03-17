@@ -188,7 +188,7 @@ article{
         max-width: 900px;
         margin-inline: auto;
         gap: 1.5rem;
-        border: 1px solid greenyellow;
+        align-items: flex-end;
     }
     .storage-status, .storage-controls{
         max-width: none;
@@ -200,6 +200,8 @@ article{
     .storage-status{
         flex: 2;
         text-align: left;
+        height: 50%;
+        padding-block:1.5rem;
     }
     .storage-left{
         top: -40px;
