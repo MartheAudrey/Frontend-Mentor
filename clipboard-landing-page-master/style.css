@@ -31,7 +31,7 @@ p{
 h1, h2, h3 {
     font-weight: var(--bold-fw);
     color: var(--dark-gray);
-    line-height: 1;
+    line-height: 1.2;
     padding-bottom: var(--small-space);
 }
 
@@ -48,6 +48,7 @@ body{
     background-image: url(images/bg-header-mobile.png);
     background-repeat: no-repeat;
     background-position: top center;
+    font-size: clamp(0.625rem, 0.493rem + 0.56vw, 1rem);
 }
 
 /*Utilities*/
@@ -205,17 +206,22 @@ footer .container {
     .hero, .CTA, .features .container > p, .access p:first-of-type{
         max-width: 50%;
         margin-inline: auto;
-    }  
+    } 
+    
+    .features-content{
+        align-items: center;
+        gap: 2rem;
+    }
     
     .features-content > img{
-        position: relative;
-        flex: 0 0 55%;
-        left: -200px;
+        width: 50%;
+        transform: translateX(-30%);
+        object-fit: cover;
     }
 
     .features-list{
-        margin-left: -130px;
-        padding-top: 7rem;
+        flex: 1;
+        margin-left: 0;
     }
     
     .feature{
@@ -226,9 +232,13 @@ footer .container {
         margin-inline: auto;
     }
 
+    .partners .flex-group{
+        flex-wrap: wrap;
+    }
+
     .footer-content{
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-columns: 100px 1fr 0.5fr;
     }
 
     .socials{
