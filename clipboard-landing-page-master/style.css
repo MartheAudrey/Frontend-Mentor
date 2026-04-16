@@ -8,7 +8,7 @@
     --small-space: 1rem;
     --medium-space: 1.5rem;
     --greater-space: 3rem;
-    --big-space: 4rem;
+    --big-space: 6rem;
 }
 
 *{
@@ -24,23 +24,8 @@ svg{
 }
 
 p{
-    /*CSS proprty value deign to improve typography by automatically preventing orphans-single words left alone on the last line of a paragraph*/
+    /*CSS property value deign to improve typography by automatically preventing orphans-single words left alone on the last line of a paragraph*/
     text-wrap: pretty;
-}
-
-
-
-body{
-    font-family: 'Bai Jamjuree', sans-serif;
-    line-height: 1.5;
-    color: var(--light-gray);
-}
-
-.container{
-    width: 80%;
-    margin-inline: auto;
-    text-align: center;
-    border: 2px solid greenyellow;
 }
 
 h1, h2, h3 {
@@ -50,6 +35,37 @@ h1, h2, h3 {
     padding-bottom: var(--small-space);
 }
 
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    line-height: 1.5;
+    color: var(--light-gray);
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/*Utilities*/
+
+.container{
+    width: 80%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.flex-group{
+    display: flex;
+    flex-direction: column;
+    gap: var(--greater-space);
+}
+
+
+/*Hero section design*/
 .hero{
     padding-block: var(--big-space) 7rem;
 }
@@ -63,25 +79,57 @@ h1, h2, h3 {
     font-size: 1.73rem;
 }
 
-a{
-    text-decoration: none;
-    cursor: pointer;
-}
 
-.features-content, .feature{
+
+.features-content,
+.access img,
+.cta-buttons,
+.tools-list {
     padding-top: var(--greater-space);
 }
 
+.access{
+    padding-block: 7rem var(--big-space);
+}
+
+
+/*Partners section design*/
+.partners {
+    padding-block: var(--big-space);
+}
+
+.partners .container{
+    align-items: center;
+}
+
+.partners .container img{
+    width: 120px;
+}
+
+.tool img, .partners img{
+    margin-inline: auto;
+}
+
+.tool h3{
+    margin-top: 2rem;
+}
+
+/*CTA section design*/
 .cta-buttons{
-    padding-top:  var(--greater-space);
     display: grid;
     gap: var(--small-space);
 }
 
 .cta-buttons .btn{
     color: white;
-    padding-block: 0.75rem;
+    padding: 0.75rem 2rem;
     border-radius: 2rem;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .btn:hover{
+    transform: translateY(-2px);
+    opacity: 0.8;
 }
 
 .cta-buttons .ios{
@@ -96,8 +144,10 @@ a{
     border-bottom: 3px solid hsl(233, 100%, 65%);
 }
 
+/*Footer section design*/
 footer{
-    background-color: var(--light-gray);
+    background-color: hsl(201, 11%, 95%);
+    margin-top: var(--big-space);
 }
 
 footer .container {
@@ -105,9 +155,6 @@ footer .container {
 }
 
 .footer-content{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
     align-items: center;
 }
 .footer-logo{
@@ -134,3 +181,76 @@ footer .container {
     gap: var(--small-space);
     align-items: center;
 }
+
+
+@media (min-width: 375px){
+    body{
+        background-image: url(images/bg-header-desktop.png);
+    }
+}
+
+@media (min-width: 560px){
+    .cta-buttons{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 865px){
+    .container{
+        max-width: 1200px;
+    }
+    .tools-list, .features-content, .partners .flex-group,footer .flex-group{
+        flex-direction: row;
+    }
+    .hero, .CTA, .features .container > p, .access p:first-of-type{
+        max-width: 50%;
+        margin-inline: auto;
+    }  
+    
+    .features-content > img{
+        position: relative;
+        flex: 0 0 55%;
+        left: -200px;
+    }
+
+    .features-list{
+        margin-left: -130px;
+        padding-top: 7rem;
+    }
+    
+    .feature{
+        text-align: left;
+    }
+
+    .access img{
+        margin-inline: auto;
+    }
+
+    .footer-content{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr;
+    }
+
+    .socials{
+        justify-self: end;
+    }
+
+    .links-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: start;
+        gap: var(--medium-space);
+    }
+
+    .links-list a:nth-child(2){
+        grid-column: 1 / 2;
+    }
+    .links-list a:nth-child(3){
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+    .links-list a:nth-child(5){
+        grid-column: 3 / 4;
+        grid-row: 1;
+    }
+}    
