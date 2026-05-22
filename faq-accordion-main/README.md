@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FAQ GitHub subfolder]()
-- Live Site URL: [FAQ accordion]()
+- Solution URL: [FAQ GitHub subfolder](https://github.com/MartheAudrey/Frontend-Mentor/tree/main/faq-accordion-main)
+- Live Site URL: [FAQ accordion](https://faq-accordion-maen.netlify.app/)
 
 ## My process
 
