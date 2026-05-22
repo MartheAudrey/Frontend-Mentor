@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MartheAudrey/Frontend-Mentor/tree/main/article-preview-component-master))
-- Live Site URL: [Article preview component]((https://article-preview-component-maen.netlify.app/))
+- Solution URL: [Article preview component-Github](https://github.com/MartheAudrey/Frontend-Mentor/tree/main/article-preview-component-master)
+- Live Site URL: [Article preview component](https://article-preview-component-maen.netlify.app/)
 
 ## My process
 
