@@ -10,3 +10,4 @@
 * Stats preview component (https://frontend-mentor-ufsh.vercel.app/)
 * Clipboard landing page (https://frontend-mentor-clipboard-maen.netlify.app/)
 * Faq accordion (https://faq-accordion-maen.netlify.app/)
+* Article preview component (https://article-preview-component-maen.netlify.app/)
