@@ -78,7 +78,8 @@ main{
     border-radius: var(--space3);
     position: relative;
     font-size: 12px;
-    min-width: 292px;
+    width: min(350px, 100%);
+    margin-inline: auto;
 } 
 
 .phone::after{
@@ -256,7 +257,7 @@ form input{
 @media (min-width: 48rem){
     main{
         flex-direction: row-reverse;
-        max-width: 800px;
+        max-width: 850px;
         align-items: center;
         gap: 5rem;
     }
@@ -272,7 +273,12 @@ form input{
         bottom: -100px;
     }
 
+    .phone{
+        flex: 0 0 350px;
+    }
+    
     .content{
         text-align: left;
+        flex: 1;
     }
 }
