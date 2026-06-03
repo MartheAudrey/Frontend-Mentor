@@ -48,7 +48,7 @@ body{
 
 main{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: var(--space4);
 }
 
@@ -255,7 +255,7 @@ form input{
 
 @media (min-width: 48rem){
     main{
-        flex-direction: row;
+        flex-direction: row-reverse;
         max-width: 800px;
         align-items: center;
         gap: 5rem;
