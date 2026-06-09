@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/Frontend%20Mentor%20Base%20Apparel%20coming%20soon%20page%20screenshot.png)
+![](./Frontend%20Mentor%20Base%20Apparel%20coming%20soon%20page%20screenshot.png)
 
 ### Links
 
