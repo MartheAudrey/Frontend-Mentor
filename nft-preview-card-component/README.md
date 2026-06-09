@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/Screenshot%202025-11-21%20at%2015-57-44%20Frontend%20Mentor%20NFT%20preview%20card%20component.png)
+![](./Screenshot%202025-11-21%20at%2015-57-44%20Frontend%20Mentor%20NFT%20preview%20card%20component.png)
 
 ### Links
 
