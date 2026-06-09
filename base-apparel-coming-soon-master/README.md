@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github directory](https://github.com/MartheAudrey/Frontend-Mentor/tree/main/base-apparel-coming-soon-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Bas Apparel Coming Soon Page](https://base-apparel-coming-soon-page-maen.netlify.app/)
 
 ## My process
 
