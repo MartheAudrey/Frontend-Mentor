@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/Screenshot%20-Clipboard%20landing%20page.png)
+![](./Screenshot%20-Clipboard%20landing%20page.png)
 
 ### Links
 
