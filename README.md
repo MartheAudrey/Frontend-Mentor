@@ -11,3 +11,4 @@
 * Clipboard landing page (https://frontend-mentor-clipboard-maen.netlify.app/)
 * Faq accordion (https://faq-accordion-maen.netlify.app/)
 * Article preview component (https://article-preview-component-maen.netlify.app/)
+* Base Apparel Coming Soon Page (https://base-apparel-coming-soon-page-maen.netlify.app/)
