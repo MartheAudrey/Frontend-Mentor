@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/Frontend%20Mentor%20Article%20preview%20component%20-%20Screenshot.png)
+![](./Frontend%20Mentor%20Article%20preview%20component%20-%20Screenshot.png)
 
 
 ### Links
