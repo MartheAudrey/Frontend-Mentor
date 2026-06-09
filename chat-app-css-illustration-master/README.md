@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/Frontend%20Mentor%20Chat%20App%20CSS%20Illustration%20Screenshot.png)
+![](./Frontend%20Mentor%20Chat%20App%20CSS%20Illustration%20Screenshot.png)
 
 
 
