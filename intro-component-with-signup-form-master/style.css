@@ -1,0 +1,177 @@
+:root{
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --purple: hsl(248, 32%, 49%);
+    --gray: hsl(249, 10%, 26%) ;
+    --light-purple: hsl(246, 25%, 77%);
+
+    --space1: 0.5rem;
+    --space2: 1rem;
+    --space3: 1.5rem;
+    --space4: 2rem;
+    --space5: 2.5rem;
+    --space6: 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    line-height: 1.2;
+}
+
+
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--red);
+    background-image: url(./images/bg-intro-mobile.png);
+    padding: var(--space3);
+    display: grid;
+    place-content: center;
+}
+
+.intro{
+    color: white;
+    text-align: center;
+    margin-block: var(--space6);
+    
+}
+.intro h1{
+    margin-bottom: var(--space3);
+}
+
+.signup-form{
+    display: grid;
+    gap: var(--space3);
+}
+
+.trial-banner{
+    background-color: var(--purple);
+    text-align: center;
+    color: white;
+    padding-block: var(--space2);
+    box-shadow: 0 7px rgba(0, 0, 0, 0.15);
+}
+
+.trial-banner p{
+    width: 60%;
+    margin-inline: auto;
+}
+
+.trial-banner,
+form,
+button,
+.form-group {
+    border-radius: 7px;
+}
+
+form{
+    background-color: white;
+    padding: var(--space3);
+    display: grid;
+    gap: var(--space2);
+    text-align: center;
+}
+
+.form-group{
+    border: 1px solid var(--light-purple);
+    display: flex;
+    align-items: center;
+    padding: var(--space2);
+    justify-content: space-between;
+}
+
+.form-group:focus-within{
+    border-color: var(--purple);
+}
+
+.hidden{
+    display: none;
+}
+
+input{
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 70%;
+}
+
+input::placeholder{
+    font-weight: 600;
+}
+
+.form-group.error {
+    border-color: var(--red);
+    border-width: 2px;
+}
+
+.form-group.error input::placeholder{
+    color: transparent;
+}
+
+button{
+    background-color: var(--green);
+    border: none;
+    color: white;
+    padding-block: var(--space2);
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 5px hsl(154, 56%, 46%);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(154, 76%, 62%);
+}
+
+.error-message{
+    color: var(--red);
+    text-align: right;
+    font-style: italic;
+    font-size: 12px;
+}
+
+form p:last-of-type{
+    color: var(--light-purple);
+    font-size: 12px;
+    width: 95%;
+    margin-inline: auto;
+}
+
+form p:last-of-type strong{
+    color: var(--red);
+}
+
+@media (min-width: 46.875rem){
+
+    body{
+        background-image: url(./images/bg-intro-desktop.png);
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 50% calc(50% - 2rem);
+        max-width: 1100px;
+        gap: var(--space4);
+    }
+
+    .intro{
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-self: center;
+    }
+
+    .intro h1{
+        width: 60%;
+    }
+
+    .trial-banner p{
+        width: 100%;
+    }
+}
