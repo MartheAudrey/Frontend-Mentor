@@ -12,6 +12,7 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
+  - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 
 
@@ -99,6 +100,10 @@ Based on my HTML structure I had to find a way to check the value of the form in
 ### Continued development
 
 My next goal is to become proficient in JavaScript.
+
+### AI Collaboration
+
+I used Claude AI to debbug my JavaScript code.
 
 ## Author
 
