@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <article class="card card__rating">
+    <div class="card__icon-container">
+      <img src="./images/icon-star.svg" alt="A star">
+    </div>
+    <div class="card__content">
+      <h1>How did we do?</h1>
+      <p>
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+    </div>
+    <div class="card__ratings">
+      <ol>
+        <li class="rating">1</li>
+        <li class="rating">2</li>
+        <li class="rating">3</li>
+        <li class="rating">4</li>
+        <li class="rating">5</li>
+      </ol>
+    </div>
+    <button type="button" class="card__submit-button">Submit</button>
+  </article>
+  <article class="card__thankyou hidden">
+    <div class="card__thankyou-image-container">
+      <img src="./images/illustration-thank-you.svg" alt="A billing illustration">
+    </div>
+    <div class="card__thankyou-score">
+        <p id="score-description"></p>
+    </div>
+    <div class="card__thankyou-content">
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+  </article>
+  <script src="./script.js"></script>
+</body>
+</html>

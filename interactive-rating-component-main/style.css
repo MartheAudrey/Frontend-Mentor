@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Primary color*/
+    --orange: hsl(25, 97%, 53%);
+
+    /*Neutral colors*/
+    --grey: hsl(217, 12%, 63%);
+    --medium-dark-grey: hsl(213, 19%, 18%);
+    --dark-grey: hsl(216, 12%, 8%);
+
+    --gradient-bg: linear-gradient(190deg, hsl(213, 19%, 18%), hsl(213.33, 17.65%, 10%));
+
+    --space1: 1rem;
+    --space2: 1.5rem;
+    --space3: 2rem;
+    --space4: 3rem;
+}
+
+img,
+svg{
+    display: block;
+    min-width: 100%;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--dark-grey);
+    display: grid;
+    place-content: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+article{
+    background-image: var(--gradient-bg);
+    width: 350px;
+    margin-inline: auto;
+    display: grid;
+    gap: var(--space1);
+    border-radius: 10px;
+    padding: var(--space2);
+}
+
+.card__icon-container,
+.rating{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__icon-container{
+    background-color: var(--medium-dark-grey);
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+
+.card__content h1{
+    color: white;
+    margin-bottom: var(--space1);
+}
+
+.card__content p{
+    color: var(--grey);
+}
+
+button{
+    background-color: var(--orange);
+    border: none;
+    padding-block: 0.7rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: inherit;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+}
+
+ol{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: var(--space1);
+}
+
+ol li{
+    color: var(--grey);
+    background-color: var(--medium-dark-grey);
+    cursor: pointer;
+}
+
+ol li:hover{
+    background-color: var(--orange);
+    color: var(--dark-grey);
+}
+
+ol li.active{
+    background-color: white;
+    color: var(--dark-grey);
+}
+
+.card__thankyou{
+    display: grid;
+    place-items: center;
+    gap: var(--space1);
+}
+
+.card__thankyou-score{
+    background-color: var(--medium-dark-grey);
+    padding: 0.5rem;
+    border-radius: 50px;
+    color: var(--orange);
+}
+
+.hidden{
+    display: none;
+}
+
+.card__thankyou-content{
+    text-align: center;
+
+    h1{
+        color: white;
+    }
+
+    p{
+        color: var(--grey);
+    }
+}
