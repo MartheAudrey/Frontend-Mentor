@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <img class="logo" src="./images/logo.svg" alt="Ping logo">
+  </header>
+  <main>
+    <div class="hero-text">
+      <h1>We are launching <strong>soon!</strong></h1>
+      <p>Subscribe and get notified</p>
+    </div>
+    <form novalidate>
+      <!--Without the label screen readers have nothing to announce when the input is focused.
+      The sr-only class hides it but keeps it accesible.
+      -->
+      <label for="email" class="sr-only">Email address</label>
+      <input type="email" id="email" placeholder="Your email address here..." aria-describedby="email-error" required>
+      <!--
+        The role makes the screen reader announce the error automatically when it appears.
+        aria-describedby links the input to its error message.
+      -->
+      <p id="email-error" class="error-message hidden" role="alert"></p>
+      <button type="submit">Notify Me</button>
+    </form>
+    <img class="illustration" src="./images/illustration-dashboard.png" alt="A dashboard illustration">
+  </main>
+  <footer>
+      <div class="icons-container">
+        <a href="#" aria-label="Facebook" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter" class="icon"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram" class="icon"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Primary color*/
+    --blue-bg-clr: hsl(223, 87%, 63%);
+    /*Secondary colors*/
+    --border-clr: hsl(223, 100%, 88%);
+    --error-clr: hsl(354, 100%, 66%);
+    /*Neutral colors*/
+    --heading-clr: hsl(0, 0%, 59%);
+    --txt-emphasis-clr: hsl(209, 33%, 12%);
+
+    --tiny-space: 0.3rem;
+    --space1: 1rem;
+    --space2: 2rem;
+    --space3: 3rem;
+    --space4: 4rem;
+
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button{
+    font-family: inherit;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    padding: var(--space2);
+    display: grid;
+    place-content: center;
+}
+
+.sr-only{
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    white-space: nowrap;
+    clip-path: inset(50%);
+    overflow: hidden;
+}
+
+header,
+main,
+footer {
+    /*In Firefox, place-items has no effect without display:grid. 
+    While Chrome is forgiving, Firefox is not.*/
+    display: grid;
+    place-items: center;
+    width: clamp(320px, 80%, 900px);
+    margin-inline: auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.logo{
+    margin-top: var(--space2);
+}
+
+main{
+    padding-block: var(--space2) var(--space4);
+    text-align: center;
+    
+
+    h1{
+        color: var(--heading-clr);
+        font-weight: 300;
+        font-size: clamp(1.375rem, 1.155rem + 0.94vw, 2rem);
+        margin-bottom: var(--space1);
+    }
+
+    strong{
+        color: var(--txt-emphasis-clr);
+        font-weight: 600;
+    }
+
+
+}
+
+p{
+    font-size: clamp(0.875rem, 0.743rem + 0.56vw, 1.25rem);
+}
+
+form{
+    margin-block: var(--space2) var(--space3);
+    display: grid;
+    gap: var(--tiny-space);
+    width: 90%;
+
+    input{
+        border: 1px solid var(--border-clr);
+        padding: 0.5rem var(--space1);
+    }
+
+    input.error{
+        border-color: var(--error-clr);
+    }
+
+    input,
+    button{
+        border-radius: 50px;
+    }
+
+    button{
+        border: none;
+        padding-block: 0.5rem;
+        color: white;
+        background-color: var(--blue-bg-clr);
+        box-shadow: 0 5px 8px hsla(223, 87%, 63%, 0.468);
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: hsl(222.98, 86.5%, 68.04%);
+    }
+
+
+    .error-message{
+        color: var(--error-clr);
+        font-style: italic;
+        text-align: left;
+        /*margin has no effect on a grid-item*/
+        padding-left: var(--space2);
+        font-size: clamp(0.625rem, 0.537rem + 0.38vw, 0.875rem);
+    }
+
+    @media (min-width: 40.625rem){
+        max-width: 700px;
+        margin-inline: auto;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 
+        "input btn"
+        "alert alert";
+
+        input{
+            grid-area: input;
+            padding-block: var(--space1);
+        }
+        button{
+            grid-area: btn;
+            padding-block: var(--space1);
+        }
+        .error-message{
+            grid-area: alert;
+        }
+    }
+
+}
+
+footer{
+    padding-block: var(--tiny-space);
+
+    .icons-container{
+        margin-bottom: var(--space1);
+    }
+
+    p{
+        color: var(--heading-clr);
+    }
+
+    a{
+        color: var(--blue-bg-clr);
+        border: 1px solid var(--border-clr);
+        border-radius: 50%;
+        padding: var(--tiny-space);
+    }
+
+    a + a{
+        margin-left: var(--tiny-space);
+    }
+}
+
+/*
+
+@media (min-width: 40.625rem){
+    form{
+        max-width: 700px;
+        margin-inline: auto;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto 50px;
+        grid-template-areas: 
+        "input btn"
+        "alert alert";
+
+        input{
+            grid-area: input;
+            padding-block: var(--space1);
+        }
+        button{
+            grid-area: btn;
+            padding-block: var(--space1);
+        }
+        .error-message{
+            grid-area: alert;
+        }
+    }
+    
+
+    
+} */
