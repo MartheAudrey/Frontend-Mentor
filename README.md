@@ -12,3 +12,4 @@
 * Faq accordion (https://faq-accordion-maen.netlify.app/)
 * Article preview component (https://article-preview-component-maen.netlify.app/)
 * Base Apparel Coming Soon Page (https://base-apparel-coming-soon-page-maen.netlify.app/)
+* Ping Coming Soon Page (https://ping-coming-soon-page-maen.netlify.app/)
