@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Ping Coming Soon Page - Github directory](https://your-solution-url.com)
+- Solution URL: [Ping Coming Soon Page - Github directory](https://github.com/MartheAudrey/Frontend-Mentor/tree/main/ping-coming-soon-page-master)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
