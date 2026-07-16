@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Github directory](https://github.com/MartheAudrey/Frontend-Mentor/tree/main/interactive-rating-component-main)
 - Live Site URL: [Interactive Rating Component](https://interactive-rating-component-maen.netlify.app/)
 
 ## My process
