@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [New Homepage - GitHub directory](https://github.com/MartheAudrey/Frontend-Mentor/tree/main/news-homepage-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [News Homepage - GitHub directory](https://github.com/MartheAudrey/Frontend-Mentor/tree/main/news-homepage-main)
+- Live Site URL: [News Homepage live](https://news-homepage-main-maen.netlify.app/)
 
 ## My process
 
