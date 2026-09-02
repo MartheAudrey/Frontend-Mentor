@@ -14,3 +14,4 @@
 * Base Apparel Coming Soon Page (https://base-apparel-coming-soon-page-maen.netlify.app/)
 * Ping Coming Soon Page (https://ping-coming-soon-page-maen.netlify.app/)
 * News Homepage Main (https://news-homepage-main-maen.netlify.app/)
+* Sunnyside Agency Landing Page (https://sunnyside-landing-page-maen.netlify.app/)
