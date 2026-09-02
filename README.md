@@ -13,3 +13,4 @@
 * Article preview component (https://article-preview-component-maen.netlify.app/)
 * Base Apparel Coming Soon Page (https://base-apparel-coming-soon-page-maen.netlify.app/)
 * Ping Coming Soon Page (https://ping-coming-soon-page-maen.netlify.app/)
+* News Homepage Main (https://news-homepage-main-maen.netlify.app/)
