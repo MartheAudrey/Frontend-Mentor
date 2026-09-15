@@ -106,7 +106,7 @@ a{
 
 
 
-sidebar{
+aside{
     position: absolute;
     width: 80%;
     background-color: white;
@@ -121,7 +121,7 @@ sidebar{
     display: none;
 }
 
-sidebar li + li {
+aside li + li {
     margin-top: var(--space3);
 }
 
@@ -130,12 +130,12 @@ sidebar li a {
     font-weight: 500;
 }
 
-sidebar .contact-link{
+aside .contact-link{
     color: var(--dark-grey);
     background-color: var(--yellow);
 }
 
-sidebar::before {
+aside::before {
     content: "";
     position: absolute;
     top: 0;
