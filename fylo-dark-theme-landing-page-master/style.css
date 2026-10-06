@@ -9,6 +9,7 @@
     /*Background gradient*/
     --gradient: linear-gradient(90deg, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
     --dark-gradient: linear-gradient(hsl(215, 19%, 19%), hsl(218, 28%, 13%));
+    --gradient-hover: linear-gradient(90deg, hsl(176, 68%, 74%), hsl(175.68, 68.31%, 64.12%));
 
     --red: hsl(0, 100%, 63%);
 
@@ -63,12 +64,12 @@ button{
     font-weight: 600;
     border-radius: 2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-image 0.3s ease;
     outline: none;
 }
 
 button:hover{
-    background-color: var(--teal-cyan-200);
+   background-image: var(--gradient-hover);
 }
 
 /*Utilities*/
@@ -126,7 +127,7 @@ button:hover{
 }
 
 .hero__navigation ul li a:hover{
-    text-decoration: underline;
+    border-bottom: 2px solid white;
     font-weight: 700;
 }
 
